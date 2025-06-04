@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Code - Foodie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        header {
+          background-color: #e78f38;
+          color: white;
+          padding: 20px;
+          margin-top: 60px;
+          text-align: center;
+        }
+    
+        .menu-container {
+          max-width: 1100px;
+          margin: 40px auto;
+          padding: 0px;
+        }
+    
+        h2 {
+          color: #f4a261;
+          border-bottom: 2px solid #f4a261;
+          padding: 30px;
+          padding-bottom: 5px;
+        }
+    
+        .menu-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          margin-top: 20px;
+        }
+    
+        .menu-item {
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+    
+        .menu-item h3 {
+          margin-top: 0;
+          color: #e78f38;
+        }
+    
+        .menu-item p {
+          font-size: 0.95em;
+          color: #555;
+        }
+    
+        .price {
+          font-weight: bold;
+          margin: 10px 0;
+        }
+    
+        button {
+          background-color: #e78f38;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1em;
+        }
+    
+        button:hover {
+          background-color: #d62839;
+        }
+      </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="#" class="logo">Fire Fork</a>
+
+            <ul>
+                <li><a href="Fire Fork.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Review.html">Reviews</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+           <button><a href="login.html" style="color: white; text-decoration: none;">Login</a></button>
+        </nav>
+       
+  <header>
+    <h1>🔥 Fire Fork - Menu</h1>
+    <p>Order your favorites, fast and hot!</p>
+  </header>
+
+  <div class="menu-container">
+    <div class="menu-container">
+        <h2>🍕 Pizza</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Fire Crust Pepperoni</h3>
+            <p>Thin crust pizza with spicy pepperoni, mozzarella & chili flakes.</p>
+            <div class="price">$10.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Veggie Blaze</h3>
+            <p>Loaded with bell peppers, olives, onions & hot sauce swirl.</p>
+            <div class="price">$9.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>BBQ Chicken Pizza</h3>
+            <p>BBQ sauce, chicken, red onions, and mozzarella.</p>
+            <div class="price">$11.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Margarita Pizza</h3>
+            <p>Classic margherita with fresh mozzarella, basil, and tomatoes.</p>
+            <div class="price">$9.49</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+    
+        <h2>🍔 Burgers</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Blazing Beef Burger</h3>
+            <p>Juicy grilled beef patty with fire sauce, lettuce, tomato & cheddar.</p>
+            <div class="price">$8.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Spicy Chicken Crunch</h3>
+            <p>Crispy chicken fillet with spicy mayo, pickles & pepper jack.</p>
+            <div class="price">$7.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>BBQ Bacon Burger</h3>
+            <p>Beef patty, crispy bacon, BBQ sauce, and cheddar cheese.</p>
+            <div class="price">$9.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Fiery Jalapeño Burger</h3>
+            <p>Grilled beef, spicy jalapeños, pepper jack cheese, and sriracha mayo.</p>
+            <div class="price">$8.99</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+    
+        <h2>🥙 Shawarma</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Classic Chicken Shawarma</h3>
+            <p>Seasoned chicken with garlic sauce, lettuce, and tomatoes wrapped in pita.</p>
+            <div class="price">$7.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Lamb Shawarma</h3>
+            <p>Tender lamb, hummus, garlic sauce, and fresh veggies wrapped in pita.</p>
+            <div class="price">$8.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Beef Shawarma</h3>
+            <p>Spicy beef, tahini, pickles, and onions wrapped in pita.</p>
+            <div class="price">$8.29</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Falafel Shawarma</h3>
+            <p>Crispy falafel, hummus, and tahini wrapped in pita.</p>
+            <div class="price">$6.99</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+    
+        <h2>🥪 Sandwiches</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Grilled Chicken Sandwich</h3>
+            <p>Grilled chicken breast, lettuce, tomato & zesty mayo.</p>
+            <div class="price">$6.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Spicy Veggie Stack</h3>
+            <p>Grilled veggies layered with cheese & fire sauce on multigrain bread.</p>
+            <div class="price">$6.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>BBQ Chicken Sandwich</h3>
+            <p>Grilled chicken with BBQ sauce, lettuce, and cheddar cheese.</p>
+            <div class="price">$7.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Buffalo Chicken Sandwich</h3>
+            <p>Grilled chicken with buffalo sauce, lettuce, and ranch dressing.</p>
+            <div class="price">$7.99</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+    
+        <h2>🌮 Tacos</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Street Heat Tacos</h3>
+            <p>Choice of meat with salsa & crema in 3 soft tacos.</p>
+            <div class="price">$6.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Fire Fork Fiesta</h3>
+            <p>Taco combo with nachos & sauces.</p>
+            <div class="price">$9.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Spicy Chicken Tacos</h3>
+            <p>Grilled chicken with chipotle sauce, lettuce, and cilantro.</p>
+            <div class="price">$7.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Beef and Cheese Tacos</h3>
+            <p>Ground beef with cheddar cheese, salsa, and sour cream.</p>
+            <div class="price">$6.99</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+    
+        <h2>🍟 Sides</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Loaded Fire Fries</h3>
+            <p>Fries topped with spicy cheese, jalapeños, and crispy bacon.</p>
+            <div class="price">$4.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Onion Ring Blaze</h3>
+            <p>Crispy onion rings with our signature smoky dip.</p>
+            <div class="price">$3.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Cheese Sticks</h3>
+            <p>Deep-fried mozzarella cheese sticks with marinara sauce.</p>
+            <div class="price">$5.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Garlic Bread Bites</h3>
+            <p>Soft bread bites with garlic butter and parmesan.</p>
+            <div class="price">$3.49</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+    
+        <h2>🥤 Drinks & Desserts</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Cool Off Shakes</h3>
+            <p>Chocolate, Vanilla, or Strawberry milkshakes.</p>
+            <div class="price">$3.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Flame Chiller</h3>
+            <p>Fizzy mocktail with a twist of chili-lime.</p>
+            <div class="price">$4.49</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Choco Lava Cup</h3>
+            <p>Warm chocolate cake with a gooey center.</p>
+            <div class="price">$5.99</div>
+            <button>Add to Order</button>
+          </div>
+          <div class="menu-item">
+            <h3>Apple Pie</h3>
+            <p>Classic apple pie with a cinnamon glaze.</p>
+            <div class="price">$3.99</div>
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Cart Modal -->
+<div class="cart-modal" id="cart-modal" style="display: none;">
+    <div class="cart-modal-content">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <div id="cart-total"></div>
+        <button onclick="placeOrder()">Place Order</button>
+        <button onclick="toggleCartModal()">Close</button>
+    </div>
+</div>
+
+<!-- Cart Icon with Counter -->
+<div class="cart-icon" id="cart-icon" onclick="toggleCartModal()">
+    🛒
+    <div class="cart-counter" id="cart-counter">0</div>
+</div>
+
+<script>
+    // Initialize cart array
+    let cart = [];
+
+    // Function to add an item to the cart
+    function addToCart(itemName, itemPrice) {
+        cart.push({ name: itemName, price: itemPrice });
+
+        // Update the cart counter
+        updateCartCounter();
+
+        // Show the cart modal with updated contents
+        updateCartModal();
+    }
+
+    // Update the cart item count in the cart icon
+    function updateCartCounter() {
+        const cartCounter = document.getElementById('cart-counter');
+        cartCounter.textContent = cart.length;  // Set the cart count
+    }
+
+    // Function to display the cart modal and show all items in the cart
+    function updateCartModal() {
+        const cartItemsContainer = document.getElementById('cart-items');
+        cartItemsContainer.innerHTML = '';  // Clear existing items
+
+        // Add each item to the cart modal
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItemsContainer.appendChild(li);
+        });
+
+        const total = cart.reduce((acc, item) => acc + item.price, 0);
+        document.getElementById('cart-total').textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    // Function to toggle the visibility of the cart modal
+    function toggleCartModal() {
+        const cartModal = document.getElementById('cart-modal');
+        if (cartModal.style.display === 'none' || cartModal.style.display === '') {
+            cartModal.style.display = 'block';
+        } else {
+            cartModal.style.display = 'none';
+        }
+    }
+
+    // Function to place the order
+    function placeOrder() {
+        if (cart.length === 0) {
+            alert("Your cart is empty. Please add items to the cart.");
+            return;
+        }
+
+        // Clear the cart after placing the order
+        cart = [];
+        updateCartCounter();
+        updateCartModal();
+        window.location.href = "Order.html";
+
+        // Show order confirmation
+        // alert("Your order has been placed successfully!");
+        // toggleCartModal(); // Close the cart modal after placing the order
+    }
+
+    // Adding event listeners for each "Add to Order" button
+    const addButtons = document.querySelectorAll('.menu-item button');
+    addButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const itemName = this.closest('.menu-item').querySelector('h3').textContent;
+            const itemPrice = parseFloat(this.closest('.menu-item').querySelector('.price').textContent.replace('$', ''));
+            addToCart(itemName, itemPrice);
+        });
+    });
+</script>
+
+</body>
+</html>

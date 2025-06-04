@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Code - Foodie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="#" class="logo">Fire Fork</a>
+
+            <ul>
+                <li><a href="Fire Fork.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Review.html">Reviews</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <button><a href="login.html" style="color: white; text-decoration: none;">Login</a></button>
+        </nav>
+
+        <div class="login-box">
+            <div class="login-header">
+              <header>🔥 Order Now - Fire Fork</header>
+            </div>
+          
+            <form class="input-box" id="orderForm">
+              <input type="text" class="input-field" name="name" placeholder="Full Name" autocomplete="off" required>
+              <input type="email" class="input-field" name="email" placeholder="Email" autocomplete="off" required>
+              <input type="text" class="input-field" name="address" placeholder="Delivery Address" autocomplete="off" required>
+          
+              <select class="input-field" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="easypaisa">Easypaisa</option>
+                <option value="jazzcash">Jazzcash</option>
+              </select>
+          
+              <div class="input-submit">
+                <button class="submit-btn" id="submit" type="submit"></button>
+                <label for="submit">Order Now</label>
+              </div>
+            </form>
+          
+            <div class="sign-up-link">
+              <p>Need help with your order? <a href="contact.html">Contact us</a></p>
+            </div>
+          </div>
+       
+          <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+              e.preventDefault(); // stop form from submitting normally
+          
+              // Validate fields (basic)
+              const name = this.name.value.trim();
+              const email = this.email.value.trim();
+              const address = this.address.value.trim();
+              const payment = this.payment.value;
+          
+              if (name && email && address && payment) {
+                alert('🎉 Order Placed Successfully!');
+                this.reset(); // Clear the form
+              } else {
+                alert('❗ Please complete all fields.');
+              }
+            });
+          </script>
+          
+</body>
+</html>
